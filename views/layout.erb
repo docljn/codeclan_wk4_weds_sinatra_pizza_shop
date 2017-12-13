@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 <head>
   <title>Pizza Shop</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <h1>CodeclanPizzaShop</h1>
-  <nav>
-    <ul>
-      <li> <a href="/pizzas">Orders</a> </li>
-      <li> <a href="/pizzas/new">New Order</a> </li>
-    </ul>
-  </nav>
-  <main>
-    <%= yield %>
-  </main>
+  <div id="wrapper">
 
+    <h1>CodeclanPizzaShop</h1>
+    <nav class="flex plain">
+      <ul>
+        <li> <a href="/pizzas">All Orders</a> </li>
+        <li> <a href="/pizzas/new">New Order</a> </li>
+      </ul>
+    </nav>
+    <main>
+      <%= yield %>
+    </main>
+
+  </div>  <!-- wrapper -->
 </body>
 </html>
